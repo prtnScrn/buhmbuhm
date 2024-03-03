@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <img src="https://i.kym-cdn.com/entries/icons/original/000/047/390/cover8.jpg" style="width: 100%; height: auto;" />
-    <audio src="drive.mp3" loop autoplay></audio>
+    <button id="c" onclick="start()">FUNNY BUTTON :]</button>
+    <img id="v" src="https://i.kym-cdn.com/entries/icons/original/000/047/390/cover8.jpg" style="width: 100%; height: auto; display:none" />
+    <audio id="l" src="drive.mp3" loop autoplay muted></audio>
   </body>
+  <script>
+    function start(){
+      document.getElementById('v').style.display = "block";
+      document.getElementById('c').style.display = "none";
+      document.getElementById('l').muted = false;
+    }
+  </script>
 </html>
